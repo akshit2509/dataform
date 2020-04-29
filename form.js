@@ -15,21 +15,7 @@ function checkEmptyInput() {
     function myFunction(gen) {
         gender=gen;
     }
-    function func() {
-        var chb = document.getElementsByClassName('chb');
-        if (chb[0].checked) {
-            document.getElementById('pgh').innerHTML = "Red ";
-        }
-
-        if (chb[1].checked) {
-            document.getElementById('pgh').style.fontSize = "Green ";
-        }
-
-        if (chb[2].checked) {
-            document.getElementById('pgh').style.fontWeight = "Blue";
-        }
-
-    }
+ 
     message = document.getElementById("exampleFormControlTextarea1").value;
 
 
@@ -122,7 +108,21 @@ function addHtmlTableRow() {
         selectedRowToInput();
     }
 }
+function func() {
+    var chb = document.getElementsByClassName('chb');
+    if (chb[0].checked) {
+        document.getElementById('pgh').innerHTML = "Red ";
+    }
 
+    if (chb[1].checked) {
+        document.getElementById('pgh').style.fontSize = "Green ";
+    }
+
+    if (chb[2].checked) {
+        document.getElementById('pgh').style.fontWeight = "Blue";
+    }
+
+}
 // document.getElementById("submitBtn").addEventListener("click", function () {
 //     document.getElementById("tableGen").innerHTML = "Hello world";
 // })
